@@ -1,4 +1,6 @@
 var fs = require('fs');
+const witch = require('witch');
+const phantomPath = witch('phantomjs-prebuilt', 'phantomjs');
 var pdf = require('html-pdf');
 var html = fs.readFileSync('./businesscard.html', 'utf8');
 
@@ -6,7 +8,7 @@ const express = require('express')
 const app = express()
 
 var options = {
-	phantomPath: '/usr/bin/phantomjs'
+	phantomPath: phantomPath
 };
 
 pdf.create(html, options).toFile('./businesscard1.pdf', function(err, res) {
