@@ -12,6 +12,7 @@
   "description": "",
   "dependencies": {
     "express": "^4",
-    "html-pdf": "^2.1.0"
+    "html-pdf": "^2.1.0",
+	"phantomjs-prebuilt":"^2.1.1"
   }
 }
