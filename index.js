@@ -9,7 +9,7 @@ var options = {
 	phantomPath: '/usr/bin/phantomjs'
 };
 
-pdf.create(html, options).toFile('./businesscard.pdf', function(err, res) {
+pdf.create(html, options).toFile('./businesscard1.pdf', function(err, res) {
 	if (err) return console.log(err);
 	console.log(res); // { filename: '/app/businesscard.pdf' }
 });
