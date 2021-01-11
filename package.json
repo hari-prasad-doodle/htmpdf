@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+  "express":"^4",
     "html-pdf": "^2.1.0"
   }
 }
