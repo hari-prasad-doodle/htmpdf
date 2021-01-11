@@ -15,4 +15,4 @@ RUN npm install
 
 COPY . ./
 
-ENTRYPOINT ["node"]
+CMD ["npm","start"]
